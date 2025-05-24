@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery – Taal Tribe</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #fff8f2;
+      color: #2e1a1a;
+    }
+
+    header {
+      background-image: url('gallery-banner.jpg'); /* Set your background image */
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 4em 1em;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3em;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .media-feature {
+      margin-top: 60px;
+      background: #fdeedc;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .media-feature h2 {
+      color: #6b1f1f;
+    }
+
+    .media-feature a {
+      display: inline-block;
+      margin-top: 10px;
+      background-color: #6b1f1f;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+
+    .media-feature a:hover {
+      background-color: #9e2a2a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2em;
+      background-color: #6b1f1f;
+      color: #fff;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Gallery</h1>
+  <p>Moments captured from our performances and rehearsals.</p>
+</header>
+
+<section>
+  <div class="gallery-grid">
+    <img src="gallery1.jpg" alt="Dance performance 1" />
+    <img src="gallery2.jpg" alt="Dance performance 2" />
+    <img src="gallery3.jpg" alt="Dance performance 3" />
+    <img src="gallery4.jpg" alt="Dance performance 4" />
+  </div>
+
+  <div class="media-feature">
+    <h2>As Seen on TV 📺</h2>
+    <p>I was recently featured in a televised interview during a Bollywood Workshop in Germany!</p>
+    <a href="https://youtube.com/your-interview-link" target="_blank">Watch the Interview</a>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Taal Tribe. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
