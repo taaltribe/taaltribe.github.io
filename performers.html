@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Dancers – Taal Tribe</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #fffaf5;
+      color: #2e1a1a;
+    }
+
+    header {
+      background-image: url('background-performers.jpg'); /* Add your background */
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 4em 1em;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 0.2em;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    .featured {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: center;
+      margin-bottom: 80px;
+    }
+
+    .featured img {
+      flex: 1 1 300px;
+      max-width: 350px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .featured-text {
+      flex: 1 1 300px;
+    }
+
+    .featured-text h2 {
+      color: #6b1f1f;
+      font-size: 2em;
+      margin-bottom: 0.5em;
+    }
+
+    .featured-text h3 {
+      font-style: italic;
+      margin-top: 0;
+    }
+
+    .featured-text p {
+      line-height: 1.6;
+      font-size: 1.05em;
+    }
+
+    h2.section-title {
+      font-size: 1.8em;
+      text-align: center;
+      color: #6b1f1f;
+      margin-bottom: 40px;
+    }
+
+    .performer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      text-align: center;
+    }
+
+    .card {
+      background: #fff8f0;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .card img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1em;
+    }
+
+    .name {
+      font-size: 1.3em;
+      font-weight: bold;
+      color: #6b1f1f;
+    }
+
+    .role {
+      font-style: italic;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2em;
+      background-color: #6b1f1f;
+      color: #fff;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      .featured {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .featured img, .featured-text {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Meet Our Dancers</h1>
+  <p>The rhythm of Taal Tribe lives through each of them.</p>
+</header>
+
+<section>
+  <div class="featured">
+    <img src="ivaxi.jpg" alt="Ivaxi">
+    <div class="featured-text">
+      <h2>Ivaxi</h2>
+      <h3>Lead Choreographer & Founder</h3>
+      <p>
+        My story: <br>
+        [Insert your personal journey, vision, or inspiration behind founding Taal Tribe here. This section is your space to shine—mention your Kathak training, your passion, or your goal to fuse tradition and innovation.]
+      </p>
+    </div>
+  </div>
+
+  <h2 class="section-title">Current Dancers</h2>
+  <div class="performer-grid">
+    <div class="card">
+      <img src="saahithi.jpg" alt="Saahithi" />
+      <div class="name">Saahithi</div>
+      <div class="role">Performer</div>
+    </div>
+    <div class="card">
+      <img src="deepali.jpg" alt="Deepali" />
+      <div class="name">Deepali</div>
+      <div class="role">Performer</div>
+    </div>
+    <div class="card">
+      <img src="priyanka.jpg" alt="Priyanka" />
+      <div class="name">Priyanka</div>
+      <div class="role">Performer</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Taal Tribe. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
