@@ -10,21 +10,41 @@
       font-family: 'Georgia', serif;
       background-color: #fffdf9;
       color: #2e1a1a;
+      scroll-behavior: smooth;
     }
 
     header {
       background: linear-gradient(to right, #6b1f1f, #9e2a2a);
       color: white;
-      text-align: center;
-      padding: 3em 1em;
+      padding: 2em 1em;
+      position: relative;
+    }
+
+    .navbar {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+    .navbar a {
+      color: #fbd87f;
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
     }
 
     header h1 {
+      text-align: center;
       font-size: 3em;
       margin-bottom: 0.3em;
     }
 
     header p {
+      text-align: center;
       font-size: 1.2em;
       margin-top: 0;
     }
@@ -35,58 +55,65 @@
       margin: auto;
     }
 
-    .about {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-      align-items: center;
+    .about, .kathak {
       text-align: center;
+      margin-bottom: 60px;
     }
 
-    .about h2 {
+    .about h2, .kathak h2 {
       color: #6b1f1f;
       font-size: 2em;
+      margin-bottom: 20px;
     }
 
-    .about p {
+    .about p, .kathak p {
       max-width: 700px;
+      margin: auto;
       line-height: 1.6;
       font-size: 1.1em;
     }
 
-    .cta-buttons {
-      margin-top: 40px;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .cta-buttons a {
-      background-color: #6b1f1f;
-      color: #fff;
-      padding: 12px 24px;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: background 0.3s ease;
-    }
-
-    .cta-buttons a:hover {
-      background-color: #9e2a2a;
+    .kathak {
+      background-image: url('kathak-bg.jpg'); /* YOUR BACKGROUND IMAGE HERE */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+      padding: 80px 20px;
+      border-radius: 10px;
     }
 
     footer {
       text-align: center;
-      padding: 2em;
+      padding: 3em 1em;
       background-color: #6b1f1f;
       color: #fff;
-      font-size: 0.9em;
+      font-size: 0.95em;
+    }
+
+    .footer-links {
+      margin-top: 1em;
+    }
+
+    .footer-links a {
+      color: #fbd87f;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
 <header>
+  <div class="navbar">
+    <a href="performers.html">Meet Our Dancers</a>
+    <a href="gallery.html">See the Gallery</a>
+    <a href="#contact">Contact Us</a>
+  </div>
   <h1>Taal Tribe</h1>
   <p>Kathak & Semi-Classical Dance Collective – Saarbrücken, Germany</p>
 </header>
@@ -94,23 +121,30 @@
 <section class="about" id="about">
   <h2>About Us</h2>
   <p>
-    Founded by <strong>Anaya Sharma</strong> in 2023, Taal Tribe celebrates the rhythm of Kathak and semi-classical dance forms. What started as a passion project evolved into a dynamic group of artists redefining South Asian storytelling through movement in Germany and beyond.
+    Founded by <strong>Ivaxi Sheth</strong> in 2023, Taal Tribe celebrates the rhythm of Kathak and semi-classical dance forms. What started as a passion project evolved into a dynamic group of artists redefining South Asian storytelling through movement in Germany and beyond.
   </p>
 
   <h2>Our Story</h2>
   <p>
-    Anaya, trained in Lucknow gharana, envisioned a space where dance could thrive not just as tradition but as lived, evolving expression. Today, Taal Tribe performs across stages and streets, inviting audiences into a tapestry of rhythm, expression, and heritage.
+    Ivaxi, trained in Lucknow gharana, envisioned a space where dance could thrive not just as tradition but as lived, evolving expression. Today, Taal Tribe performs across stages and streets, inviting audiences into a tapestry of rhythm, expression, and heritage.
   </p>
-
-  <div class="cta-buttons">
-    <a href="performers.html">Meet Our Dancers</a>
-    <a href="gallery.html">See the Gallery</a>
-    <a href="#about">Contact Us</a>
-  </div>
 </section>
 
-<footer>
-  <p>&copy; 2025 Taal Tribe. All rights reserved.</p>
+<section class="kathak">
+  <h2>About Kathak</h2>
+  <p>
+    Kathak is one of the eight classical dance forms of India, rooted in storytelling through rhythmic footwork, spins, and expressive gestures. It bridges devotional expression and technical brilliance, evolving over centuries through temple performances and royal courts.
+  </p>
+</section>
+
+<footer id="contact">
+  <p><strong>Contact Us:</strong></p>
+  <p>Email: <a href="mailto:taaltribedance@gmail.com">taaltribedance@gmail.com</a></p>
+  <div class="footer-links">
+    <a href="https://instagram.com/taaltribe" target="_blank">Instagram</a> |
+    <a href="https://youtube.com/@taaltribe" target="_blank">YouTube</a>
+  </div>
+  <p style="margin-top: 2em;">&copy; 2025 Taal Tribe. All rights reserved.</p>
 </footer>
 
 </body>
