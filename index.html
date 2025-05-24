@@ -6,56 +6,81 @@
   <title>Taal Tribe</title>
   <style>
     body {
-      font-family: 'Georgia', serif;
-      background-color: #fff8f0;
       margin: 0;
-      padding: 0;
-      color: #333;
+      font-family: 'Georgia', serif;
+      background-color: #fffdf9;
+      color: #2e1a1a;
     }
-    header, footer {
-      background-color: #6b1f1f;
+
+    header {
+      background: linear-gradient(to right, #6b1f1f, #9e2a2a);
       color: white;
       text-align: center;
-      padding: 1.5em 0;
+      padding: 3em 1em;
     }
-    nav a {
-      margin: 0 15px;
-      color: #d4af37;
-      text-decoration: none;
-      font-weight: bold;
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 0.3em;
     }
-    nav a:hover {
-      text-decoration: underline;
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 0;
     }
+
     section {
-      padding: 40px 20px;
-      max-width: 900px;
+      padding: 60px 20px;
+      max-width: 1000px;
       margin: auto;
     }
-    h1, h2 {
-      color: #6b1f1f;
-    }
-    footer {
-      font-size: 0.9em;
-    }
-    .team {
+
+    .about {
       display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-    }
-    .member {
-      flex: 1 1 150px;
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
       text-align: center;
     }
-    .member img {
-      width: 120px;
-      border-radius: 50%;
+
+    .about h2 {
+      color: #6b1f1f;
+      font-size: 2em;
     }
-    .gallery img {
-      width: 200px;
-      margin: 10px;
-      border-radius: 10px;
+
+    .about p {
+      max-width: 700px;
+      line-height: 1.6;
+      font-size: 1.1em;
+    }
+
+    .cta-buttons {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .cta-buttons a {
+      background-color: #6b1f1f;
+      color: #fff;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .cta-buttons a:hover {
+      background-color: #9e2a2a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2em;
+      background-color: #6b1f1f;
+      color: #fff;
+      font-size: 0.9em;
     }
   </style>
 </head>
@@ -64,64 +89,24 @@
 <header>
   <h1>Taal Tribe</h1>
   <p>Kathak & Semi-Classical Dance Collective – Saarbrücken, Germany</p>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#performers">Performers</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#contact">Contact</a>
-  </nav>
 </header>
 
-<section id="home">
-  <h2>Welcome to Taal Tribe</h2>
-  <p>A South Asian dance group rooted in tradition and rhythm. Taal Tribe brings Kathak and semi-classical forms to new spaces in Saarbrücken and beyond.</p>
-</section>
-
-<section id="about">
+<section class="about" id="about">
   <h2>About Us</h2>
-  <p><strong>Founder: Anaya Sharma</strong></p>
-  <p>Anaya founded Taal Tribe in 2023 to build a bridge between heritage and expression through classical Indian dance. Originally trained in Lucknow gharana Kathak, she envisioned a collective that celebrated tradition while embracing modern narratives. The group now performs across Germany, creating dynamic experiences through rhythm, storytelling, and movement.</p>
-</section>
-
-<section id="performers">
-  <h2>Our Performers</h2>
-  <div class="team">
-    <div class="member">
-      <img src="performer1.jpg" alt="Anaya Sharma">
-      <p>Anaya Sharma</p>
-    </div>
-    <div class="member">
-      <img src="performer2.jpg" alt="Rhea Kapoor">
-      <p>Rhea Kapoor</p>
-    </div>
-    <div class="member">
-      <img src="performer3.jpg" alt="Meera Sinha">
-      <p>Meera Sinha</p>
-    </div>
-    <div class="member">
-      <img src="performer4.jpg" alt="Nisha Bhat">
-      <p>Nisha Bhat</p>
-    </div>
-  </div>
-</section>
-
-<section id="gallery">
-  <h2>Gallery</h2>
-  <div class="gallery">
-    <img src="dance1.jpg" alt="Dance 1">
-    <img src="dance2.jpg" alt="Dance 2">
-    <img src="dance3.jpg" alt="Dance 3">
-  </div>
-</section>
-
-<section id="contact">
-  <h2>Contact Us</h2>
-  <p>Email: <a href="mailto:taaltribedance@gmail.com">taaltribedance@gmail.com</a></p>
-  <p>Follow us on 
-    <a href="https://instagram.com/taaltribe" target="_blank">Instagram</a> | 
-    <a href="https://youtube.com/@taaltribe" target="_blank">YouTube</a>
+  <p>
+    Founded by <strong>Anaya Sharma</strong> in 2023, Taal Tribe celebrates the rhythm of Kathak and semi-classical dance forms. What started as a passion project evolved into a dynamic group of artists redefining South Asian storytelling through movement in Germany and beyond.
   </p>
+
+  <h2>Our Story</h2>
+  <p>
+    Anaya, trained in Lucknow gharana, envisioned a space where dance could thrive not just as tradition but as lived, evolving expression. Today, Taal Tribe performs across stages and streets, inviting audiences into a tapestry of rhythm, expression, and heritage.
+  </p>
+
+  <div class="cta-buttons">
+    <a href="performers.html">Meet Our Dancers</a>
+    <a href="gallery.html">See the Gallery</a>
+    <a href="#about">Contact Us</a>
+  </div>
 </section>
 
 <footer>
